@@ -57,7 +57,8 @@
 
 
 #urxvt settings
-URxvt.font: xft:LiberationMono:size=10
+URxvt.font: xft:Source Code Pro:size=10
+URxvt.loginShell: true
 URxvt.intensityStyles: false
 URxvt.scrollBar: false
 URxvt.mouseWheelScrolPage: false
