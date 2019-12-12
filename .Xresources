@@ -57,9 +57,9 @@
 
 
 #urxvt settings
-URxvt.font: xft:Source Code Pro:size=10
-URxvt.loginShell: true
-URxvt.intensityStyles: false
-URxvt.scrollBar: false
-URxvt.mouseWheelScrolPage: false
-URxvt.internalBorder: 7
+#URxvt.font: xft:Source Code Pro:size=10
+#URxvt.loginShell: true
+#URxvt.intensityStyles: false
+#URxvt.scrollBar: false
+#URxvt.mouseWheelScrolPage: false
+#URxvt.internalBorder: 7
