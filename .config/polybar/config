@@ -161,12 +161,13 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp0s20f3
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+#format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
 format-connected-underline = #9f78e1
-label-connected = %essid%
+label-connected = %essid% %signal% %%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -174,16 +175,16 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+#ramp-signal-0 = 
+#ramp-signal-1 = 
+#ramp-signal-2 = 
+#ramp-signal-3 = 
+#ramp-signal-4 = 
+#ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = ens33
+interface = ens34
 interval = 3.0
 
 label-connected = 
@@ -266,7 +267,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/battery]
 type = internal/battery
 battery = BAT0
-adapter = ACAD
+adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
@@ -275,7 +276,7 @@ format-charging-underline = #ffb52a
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 

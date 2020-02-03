@@ -1,0 +1,16 @@
+*
+!.gitignore
+!.config/
+!.config/alacritty/
+!.config/alacritty/*
+!.config/i3/
+!.config/i3/*
+!.config/kitty/*
+!.config/polybar/
+!.config/polybar/*
+!.Xresources
+!.xsessionrc
+!.local/
+!.local/share/
+!.local/share/fonts/
+!.local/share/fonts/*
