@@ -1,4 +1,12 @@
-# Packages
+# Font debugging
+ - `fc-list` to list all fonts
+ - `fc-cache -rf` to really rebuild the font cache
+ - `fc-match` to test font "querying"
+
+**Remember restaring programs if they act up!(looking at you alacritty ;))**
+
+# i3wm Setup
+Packages:
 - i3wm
 - lightdm
 - rofi
